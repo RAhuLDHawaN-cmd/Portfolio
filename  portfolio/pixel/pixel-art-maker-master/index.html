@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 style="border:2px solid green ;background:red;">Pixel Art Maker</h1>
+
+    <h2 style="border:2px solid green;background:yellow; font-size:40px;">Choose Grid Size</h2>
+    <form id="sizePicker">
+        <h1  style="border:2px solid green;background:green;"> Grid Height:</h1>
+        <input type="number" id="input_height" name="height" min="1" value="1">
+        <h1 style="border:2px solid green;background:Blue;">Grid Width:</h1>
+        <input type="number" id="input_width" name="width" min="1" value="1">
+<p>
+
+</p>
+
+      <button type="button" style="background:red; font-size:15px;" onclick="makeGrid()">Submit</button>
+
+    </form>
+
+    <h2 style="border:2px solid green;background:yellow; font-size:30px;">Pick Any Color</h2>
+    <input type="color" id="colorPicker" style="">
+    <h2  style="border:2px solid green;background:yellow; font-size:30px;" >Design Canvas</h2>
+    <table id="pixel_canvas"></table>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="designs.js"></script>
+</body>
+</html>
